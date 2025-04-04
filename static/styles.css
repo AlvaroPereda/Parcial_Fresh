@@ -1,4 +1,81 @@
 body {
     background-color: black;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background-color: rgb(47, 47, 47);
+    button {
+        position: absolute;
+        right: 5%;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(33, 33, 33);
+        color: white;
+        padding: 10px;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    button:hover {
+        background-color: rgb(71, 71, 71)
+    }
+}
+
+.Component {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(47, 47, 47);
+}
+
+form {
+    background-color: rgb(47, 47, 47);
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 2px 2px 5px rgb(50, 50, 50);
+    input {
+        font-size: 16px;
+        border-radius: 5px;
+    }
+    button {
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(33, 33, 33);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: rgb(71, 71, 71)
+    }
 }

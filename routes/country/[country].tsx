@@ -1,4 +1,5 @@
 import { FreshContext, Handlers, PageProps } from "$fresh/server.ts";
+import CountryComponent from "../../components/CountryComponent.tsx";
 import { getCapital } from "../../utils/NinjaAPI.ts";
 import { CountryAPI } from "../../utils/types.ts";
 
@@ -11,12 +12,5 @@ export const handler:Handlers = {
 }
 
 export default (props:PageProps<CountryAPI>) => {
-    const {name, capital} = props.data
-    console.log(capital)
-    return (
-        <div>
-            <h3>{name}</h3>
-            <h4>Capital: <a href={`/city/${capital}`}>{capital}</a></h4>
-        </div>
-    )
+    return <CountryComponent data={props.data}/>
 }

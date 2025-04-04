@@ -4,9 +4,9 @@ import Header from "../components/Header.tsx";
 
 const layout = ({Component}: PageProps) => {
     return (
-        <div>
+        <div class="layout">
             <Header/>
-            <Component/>
+            <div class="Component"><Component/></div>
             <Footer/>
         </div>
     )
